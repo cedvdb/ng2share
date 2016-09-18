@@ -1,0 +1,39 @@
+.shareContainer{
+  display:flex;
+  overflow:hidden;
+}
+.vertical{
+  flex-direction:column;
+}
+/*This has to be repeated here (it is already in share-button.component.css)
+because of encapsulation. Angular doesn't provide encapsulation on
+multicomponent level / module level, as far as I am aware.*/
+.share-btn{
+  font-size:24px;
+  cursor:pointer;
+  color:#eee;
+  border-radius: 2px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.horizontal-margin{
+  margin: 0 5px;
+}
+.vertical-margin{
+  margin: 5px 0;
+}
+.share-btn:hover{
+  color:#ffffff;
+}
+.share-btn-more{
+  background:#ccc;
+}

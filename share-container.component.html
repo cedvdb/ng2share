@@ -1,0 +1,26 @@
+<div class="shareContainer {{direction}}">
+  <!-- Primary share platforms-->
+  <my-share-button *ngFor="let platform of platforms"
+                   [platformName]="platform"
+                   [textEnabled]="textEnabled"
+                   [addedText]="addedText"
+                   [direction]="direction">
+  </my-share-button>
+  <!-- Secondary share platforms-->
+  <div class="shareContainer  {{direction}}"
+      *ngIf="expandable">
+    <div class="shareContainer  {{direction}}"
+        [@expandedState]="expandedState">
+      <my-share-button *ngFor="let expPlatform of secondaryPlatforms"
+                       [platformName]="expPlatform"
+                       [textEnabled]="false"
+                       [direction]="direction">
+      </my-share-button>
+    </div>
+    <!-- Expanding btn -->
+    <div (click)="expand()" class="share-btn share-btn-more {{direction}}-margin">
+      {{expandedState == 'collapsed' ? '+' : '-'}}
+    </div>
+
+  </div>
+</div>
