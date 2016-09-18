@@ -1,6 +1,6 @@
 import { Component, Input, OnInit,trigger,state,style,transition,animate }
         from '@angular/core';
-import { Platform, platforms } from './platforms.utils.ts'
+import { Platform, platforms } from '../platforms.utils'
 // a test comment switching cvs
 @Component({
   selector: 'my-share-button',
