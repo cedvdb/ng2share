@@ -35,12 +35,14 @@ export class ShareContainerComponent implements OnInit{
   _direction:string = 'horizontal';
   // state of the secondary platform expandable pannel
   expandedState:string = "collapsed";
+  url:string; title:string; description:string; image:string;
 
   ngOnInit(){
-    // this.url = this.getMetaContent('og:url');
-    // this.title = this.getMetaContent('og:title');
-    // this.description = this.getMetaContent('og:description');
-    // this.image = this.getMetaContent('og:image');
+    this.url = this.getMetaContent('og:url') || window.location.href.toString();
+    console.log(this.url);
+    this.title = this.getMetaContent('og:title') || document.title;
+    this.description = this.getMetaContent('og:description');
+    this.image = this.getMetaContent('og:image');
   }
   expand(){
     this.expandedState = (this.expandedState == 'collapsed' ? 'expanded' : 'collapsed');
@@ -58,4 +60,12 @@ export class ShareContainerComponent implements OnInit{
   get direction(){
     return this._direction;
   }
+
+  getMetaContent(property: string) {
+    let elem = document.querySelector(`meta[property='${property}']`);
+    if(elem)
+      return elem.getAttribute("content");
+    return "";
+  }
+
 }

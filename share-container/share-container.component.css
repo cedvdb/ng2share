@@ -1,5 +1,5 @@
 .shareContainer{
-  display:flex;
+  display:inline-flex;
   overflow:hidden;
 }
 .vertical{

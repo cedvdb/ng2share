@@ -21,12 +21,15 @@ export class ShareButtonComponent implements OnInit{
   @Input() textEnabled: boolean;
   @Input() addedText:string;
   @Input() direction:string = 'horizontal';
-
+  @Input() url:string;
+  @Input() title:string;
+  
   ngOnInit(){
     this.platform = platforms[this.platformName];
   }
 
   click(){
-    window.open(this.platform.url,'newwindow', null);
+    let url = `${this.platform.url}${this.url}&title=${this.title}`
+    window.open(url,'_blank', "width=1070,height=700");
   }
 }
