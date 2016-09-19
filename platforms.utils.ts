@@ -12,6 +12,9 @@ interface Platforms { // plural
   pinterest:Platform;
   reddit:Platform;
   linkedin:Platform;
+  stumbleUpon:Platform;
+  tumblr:Platform;
+  mail:Platform;
 }
 
 export const platforms:Platforms = {
@@ -56,5 +59,27 @@ export const platforms:Platforms = {
               logoOfficial:'linkedin',
               logo:'linkedin2',
               text:'Share'
+        },
+  stumbleUpon : {
+              name:'stumbleUpon',
+              url: 'http://www.stumbleupon.com/submit?url=',
+              logoOfficial:'stumbleupon2',
+              logo:'stumbleupon',
+              text:'stumbleupon'
+  },
+  tumblr : {
+              name:'tumblr',
+              url: 'http://www.tumblr.com/share/link?url=',
+              logoOfficial:'tumblr',
+              logo:'tumblr2',
+              text:'Share'
+        },
+  mail : {
+              name:'mail',
+              url: '',
+              logoOfficial:'mail',
+              logo:'mail',
+              text:'Mail'
         }
+
 }

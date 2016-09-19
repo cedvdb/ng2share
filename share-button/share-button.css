@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ggipqk');
-  src:  url('fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ggipqk') format('truetype'),
-    url('fonts/icomoon.woff?ggipqk') format('woff'),
-    url('fonts/icomoon.svg?ggipqk#icomoon') format('svg');
+  src:  url('ng2share/fonts/icomoon.eot?ggipqk');
+  src:  url('ng2share/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
+    url('ng2share/fonts/icomoon.ttf?ggipqk') format('truetype'),
+    url('ng2share/fonts/icomoon.woff?ggipqk') format('woff'),
+    url('ng2share/fonts/icomoon.svg?ggipqk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -55,8 +55,11 @@
 .share-btn-linkedin{
   background:#0074a1;
 }
-.share-btn-tumblr{
+.share-btn-stumbleUpon{
   background:#ff4e2e;
+}
+.share-btn-tumblr{
+  background:#35465c;
 }
 .share-btn-pinterest{
   background:#ca212a;
@@ -65,6 +68,9 @@
 .share-btn-reddit{
   background: #FF5700;
   font-size: 1.1rem;
+}
+.share-btn-mail{
+  background:#ff2e40;
 }
 
 [class^="icon-"], [class*=" icon-"] {
