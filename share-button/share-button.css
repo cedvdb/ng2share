@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'n2s-icomoon';
   src:  url('ng2share/fonts/icomoon.eot?ggipqk');
   src:  url('ng2share/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
     url('ng2share/fonts/icomoon.ttf?ggipqk') format('truetype'),
@@ -8,7 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.share-btn{
+.n2s-share-btn{
   font-size:24px;
   cursor:pointer;
   color:#eee;
@@ -25,57 +25,57 @@
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.horizontal-margin{
+.n2s-horizontal-margin{
   margin: 0 5px;
 }
-.vertical-margin{
+.n2s-vertical-margin{
   margin: 5px 0;
 }
-.share-btn-with-text{
+.n2s-share-btn-with-text{
   padding:0 10px 0 5px;
   width:auto;
 }
-.share-btn:hover{
+.n2s-share-btn:hover{
   color:#ffffff;
 }
-.shareText{
+.n2s-shareText{
   margin-left: 5px;
   font-size: 14px;
   font-family: helvetica;
 }
-.share-btn-facebook{
+.n2s-share-btn-facebook{
   background:#2d609b;
 }
-.share-btn-twitter{
+.n2s-share-btn-twitter{
   background:#00c3f3;
 }
-.share-btn-google-plus{
+.n2s-share-btn-google-plus{
   background:#eb4026;
 }
-.share-btn-linkedin{
+.n2s-share-btn-linkedin{
   background:#0074a1;
 }
-.share-btn-stumbleUpon{
+.n2s-share-btn-stumbleUpon{
   background:#ff4e2e;
 }
-.share-btn-tumblr{
+.n2s-share-btn-tumblr{
   background:#35465c;
 }
-.share-btn-pinterest{
+.n2s-share-btn-pinterest{
   background:#ca212a;
   font-size: 1.1rem;
 }
-.share-btn-reddit{
+.n2s-share-btn-reddit{
   background: #FF5700;
   font-size: 1.1rem;
 }
-.share-btn-mail{
+.n2s-share-btn-mail{
   background:#ff2e40;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="n2s-icon-"], [class*=" n2s-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'n2s-icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -87,69 +87,69 @@
   font-size: 1rem;
 }
 
-.icon-mail:before {
+.n2s-icon-mail:before {
   content: "\e900";
 }
-.icon-github-official:before {
+.n2s-icon-github-official:before {
   content: "\e904";
 }
-.icon-google-plus:before {
+.n2s-icon-google-plus:before {
   content: "\e906";
 }
-.icon-instagram:before {
+.n2s-icon-instagram:before {
   content: "\e912";
 }
-.icon-pinterest-official:before {
+.n2s-icon-pinterest-official:before {
   content: "\e909";
 }
-.icon-pinterest-lean:before {
+.n2s-icon-pinterest-lean:before {
   content: "\e90a";
 }
-.icon-share:before {
+.n2s-icon-share:before {
   content: "\ea82";
 }
-.icon-google-plus2:before {
+.n2s-icon-google-plus2:before {
   content: "\ea8b";
 }
-.icon-facebook:before {
+.n2s-icon-facebook:before {
   content: "\ea90";
 }
-.icon-facebook-official:before {
+.n2s-icon-facebook-official:before {
   content: "\ea91";
 }
-.icon-twitter:before {
+.n2s-icon-twitter:before {
   content: "\ea96";
 }
-.icon-blogger:before {
+.n2s-icon-blogger:before {
   content: "\eab7";
 }
-.icon-blogger2:before {
+.n2s-icon-blogger2:before {
   content: "\eab8";
 }
-.icon-tumblr:before {
+.n2s-icon-tumblr:before {
   content: "\eab9";
 }
-.icon-tumblr2:before {
+.n2s-icon-tumblr2:before {
   content: "\eaba";
 }
-.icon-reddit:before {
+.n2s-icon-reddit:before {
   content: "\eac6";
 }
-.icon-linkedin:before {
+.n2s-icon-linkedin:before {
   content: "\eac9";
 }
-.icon-linkedin2:before {
+.n2s-icon-linkedin2:before {
   content: "\eaca";
 }
-.icon-lastfm:before {
+.n2s-icon-lastfm:before {
   content: "\eacb";
 }
-.icon-lastfm2:before {
+.n2s-icon-lastfm2:before {
   content: "\eacc";
 }
-.icon-stumbleupon:before {
+.n2s-icon-stumbleupon:before {
   content: "\eace";
 }
-.icon-stumbleupon2:before {
+.n2s-icon-stumbleupon2:before {
   content: "\eacf";
 }

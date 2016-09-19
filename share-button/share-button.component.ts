@@ -6,10 +6,13 @@ import { Platform, platforms } from '../platforms.utils'
   selector: 'my-share-button',
   template: `
               <div (click)="click()"
-                  class="share-btn share-btn-{{platform.name}} {{direction}}-margin
-                  {{textEnabled ? 'share-btn-with-text' : '' }}">
-                <i class="icon-{{platform.logoOfficial}}"></i>
-                <span class="shareText" *ngIf="textEnabled">{{platform.text}} {{addedText}}</span>
+                  class="n2s-share-btn n2s-share-btn-{{platform.name}} n2s-{{direction}}-margin
+                  {{textEnabled ? 'n2s-share-btn-with-text' : '' }}">
+                <i class="n2s-icon-{{platform.logoOfficial}}"></i>
+                <span class="n2s-shareText" *ngIf="textEnabled">
+                  <span class="n2s-shareText-primary">{{platform.text}} </span>
+                  <span class="n2s-shareText-secondary">{{addedText}}</span>
+                </span>
 
               </div>
             `,
@@ -23,7 +26,7 @@ export class ShareButtonComponent implements OnInit{
   @Input() direction:string = 'horizontal';
   @Input() url:string;
   @Input() title:string;
-  
+
   ngOnInit(){
     this.platform = platforms[this.platformName];
   }
