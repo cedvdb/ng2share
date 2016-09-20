@@ -5,18 +5,18 @@
                    [textEnabled]="textEnabled"
                    [addedText]="addedText"
                    [direction]="direction"
-                   url="{{url}}"
-                   title="{{title}}">
+                   [properties]="properties">
   </my-share-button>
   <!-- Secondary share platforms-->
   <div class="n2s-shareContainer  n2s-{{direction}}"
       *ngIf="expandable">
-    <div class="n2s-shareContainer  n2s-{{direction}}"
+    <div class="n2s-shareContainer  n2s-expansion n2s-{{direction}}"
         [@expandedState]="expandedState">
       <my-share-button *ngFor="let expPlatform of secondaryPlatforms"
                        [platformName]="expPlatform"
                        [textEnabled]="false"
-                       [direction]="direction">
+                       [direction]="direction"
+                       [properties]="properties">
       </my-share-button>
     </div>
     <!-- Expanding btn -->

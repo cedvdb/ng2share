@@ -7,10 +7,7 @@ import { ShareButtonComponent }     from './share-button/share-button.component'
 
 @NgModule({
   imports:      [ CommonModule, FormsModule ],
-  declarations: [
-    ShareContainerComponent, ShareButtonComponent
-    //jhgjgh
-  ],
+  declarations: [ ShareContainerComponent, ShareButtonComponent ],
   exports:      [ ShareContainerComponent ]
 })
 export class ShareModule { }
