@@ -3,7 +3,7 @@ import { Component, Input, OnInit, ViewEncapsulation, trigger, state, style, tra
 import { Properties } from '../properties.utils'
 
 @Component({
-  selector: 'my-share-container',
+  selector: 'share-container',
   templateUrl: './share-container.component.html',
   styleUrls: ['./share-container.component.css'],
   // Emulated is the Default, change it to ViewEncapsulation.None if you

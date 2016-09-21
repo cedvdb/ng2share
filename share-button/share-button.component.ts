@@ -6,7 +6,7 @@ import { Properties } from '../properties.utils'
 // a test comment switching cvs
 
 @Component({
-  selector: 'my-share-button',
+  selector: 'share-button',
   template: `<a href="{{this.platform.url}}" (click)="click($event)" target='_blank'>
               <div class="n2s-share-btn n2s-share-btn-{{platform.name}} n2s-{{direction}}-margin
                   {{textEnabled ? 'n2s-share-btn-with-text' : '' }}">
