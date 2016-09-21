@@ -6,9 +6,6 @@ import { Properties } from '../properties.utils'
   selector: 'share-container',
   templateUrl: './share-container.component.html',
   styleUrls: ['./share-container.component.css'],
-  // Emulated is the Default, change it to ViewEncapsulation.None if you
-  // want to costumize ng 2 share.
-  encapsulation: ViewEncapsulation.None,
   animations: [
           trigger('expandedState', [
             state('expanded', style({

@@ -1,23 +1,15 @@
-@font-face {
-  font-family: 'n2s-icomoon';
-  src:  url('ng2share/fonts/icomoon.eot?ggipqk');
-  src:  url('ng2share/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
-    url('ng2share/fonts/icomoon.ttf?ggipqk') format('truetype'),
-    url('ng2share/fonts/icomoon.woff?ggipqk') format('woff'),
-    url('ng2share/fonts/icomoon.svg?ggipqk#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 .n2s-share-btn{
+  height: 32px;
+  width: 32px;
   font-size:24px;
   cursor:pointer;
   color:#eee;
   border-radius: 2px;
+  /*center icons*/
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 32px;
-  width: 32px;
+  /*disallow selection*/
   user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -71,6 +63,22 @@
 }
 .n2s-share-btn-mail{
   background:#ff2e40;
+}
+
+/*Under this is the css for icons. Don't change this if you want to keep the same icons.*/
+
+
+/*This should be changed if you want to change to accurately describe what folder ng2share is in.*/
+
+@font-face {
+  font-family: 'n2s-icomoon';
+  src:  url('ng2share/fonts/icomoon.eot?ggipqk');
+  src:  url('ng2share/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
+    url('ng2share/fonts/icomoon.ttf?ggipqk') format('truetype'),
+    url('ng2share/fonts/icomoon.woff?ggipqk') format('woff'),
+    url('ng2share/fonts/icomoon.svg?ggipqk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 [class^="n2s-icon-"], [class*=" n2s-icon-"] {
