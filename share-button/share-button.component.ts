@@ -43,10 +43,7 @@ export class ShareButtonComponent implements OnInit{
   constructUrl(){
     this.url = this.platform.url + this.properties.url;
     if(this.platform.properties){
-      console.log("properties");
         for(let key in this.platform.properties){
-          console.log(key);
-          console.log(this.properties[this.platform.properties[key]]);
           // if the property has been found.
           let val = this.properties[this.platform.properties[key]];
           if(val){
