@@ -3,12 +3,12 @@ import { Component, Input, OnInit,trigger,state,style,transition,animate }
 import { Platform, platforms } from '../platforms.utils'
 import { Properties } from '../properties.utils'
 
-// a test comment switching cvs
 
 @Component({
   selector: 'share-button',
-  template: `<a href="{{this.platform.url}}" (click)="click($event)" target='_blank'>
-              <div class="n2s-share-btn n2s-share-btn-{{platform.name}} n2s-{{direction}}-margin
+  template: `<a href="{{this.url}}" (click)="click($event)" target='_blank'>
+              <div  (click)="click($event)"
+                class="n2s-share-btn n2s-share-btn-{{platform.name}} n2s-{{direction}}-margin
                   {{textEnabled ? 'n2s-share-btn-with-text' : '' }}">
                 <i class="n2s-icon-{{platform.logoOfficial}}"></i>
                 <span class="n2s-shareText" *ngIf="textEnabled">
@@ -29,6 +29,9 @@ export class ShareButtonComponent implements OnInit{
   @Input() properties:Properties;
   url:string;
 
+  constructor(){
+
+  }
 
   ngOnInit(){
     this.platform = platforms[this.platformName];
