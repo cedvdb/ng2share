@@ -41,14 +41,14 @@ export const platforms:Platforms = {
   facebook : {
               name:'facebook',
               url: 'http://www.facebook.com/sharer/sharer.php?u=',
-              logoOfficial:'facebook-official',
+              logoOfficial:'facebook',
               logo:'facebook',
               text:'Share',
           },
   reddit : {
               name: 'reddit',
               url: 'http://www.reddit.com/submit?url=',
-              logoOfficial:'reddit',
+              logoOfficial:'reddit-alien',
               logo:'reddit',
               text:'Submit',
               properties:{
@@ -58,7 +58,7 @@ export const platforms:Platforms = {
   pinterest:{
               name:'pinterest',
               url: 'https://pinterest.com/pin/create/button/?url=',
-              logoOfficial:'pinterest-official',
+              logoOfficial:'pinterest-p',
               logo:'pinterest-lean',
               text:'Pin',
               properties:{
@@ -79,7 +79,7 @@ export const platforms:Platforms = {
   stumbleUpon : {
               name:'stumbleUpon',
               url: 'http://www.stumbleupon.com/submit?url=',
-              logoOfficial:'stumbleupon2',
+              logoOfficial:'stumbleupon',
               logo:'stumbleupon',
               text:'stumbleupon',
               properties:{
@@ -100,7 +100,7 @@ export const platforms:Platforms = {
   mail : {
               name:'mail',
               url: 'mailto:?subject=I%20saw%20this%20and%20thought%20about%20you:%20',
-              logoOfficial:'mail',
+              logoOfficial:'envelope',
               logo:'mail',
               text:'Mail',
         }

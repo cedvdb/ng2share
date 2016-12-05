@@ -55,6 +55,11 @@ export class ShareContainerComponent implements OnInit{
     this.properties.image = this.properties.image || this.getMetaContent('og:image');
     this.properties.via = this.properties.via || this.getMetaContent('n2s:via');
     this.properties.hashtags = this.properties.hashtags || this.getMetaContent('n2s:hashtags');
+    for(let p in this.properties){
+      if (this.properties.hasOwnProperty(p)) {
+          this.properties[p] = encodeURIComponent(this.properties[p]);
+      }
+    }
   }
   getMetaContent(property: string) {
     let elem = document.querySelector(`meta[property='${property}']`);

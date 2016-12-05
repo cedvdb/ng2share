@@ -10,7 +10,7 @@ import { Properties } from '../properties.utils'
               <div  (click)="click($event)"
                 class="n2s-share-btn n2s-share-btn-{{platform.name}} n2s-{{direction}}-margin
                   {{textEnabled ? 'n2s-share-btn-with-text' : '' }}">
-                <i class="n2s-icon-{{platform.logoOfficial}}"></i>
+                <i class="ic fa fa-{{platform.logoOfficial}}"></i>
                 <span class="n2s-shareText" *ngIf="textEnabled">
                   <span class="n2s-shareText-primary">{{platform.text}} </span>
                   <span class="n2s-shareText-secondary">{{addedText}}</span>

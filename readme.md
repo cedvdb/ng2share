@@ -1,5 +1,5 @@
 # ng2share Expandable Share buttons for angular 2 !
-### version : 1.0.0
+### version : 1.2.0
 
 ![ng2share preview](http://i.imgur.com/L9EbBaa.png)
 
@@ -26,27 +26,25 @@ Also visually inspired from the share buttons at http://mashable.com
 
  * [Multiple shared content by url](#multiple-shared-content-by-url)
 
- * [Installing in another folder](#installing-in-another-folder)
-
  * [Thanks for your feedback](#thanks for your feedback)
 
 
 ## Installation
 
- Installing ng2share is really easy. Just go into your src folder and clone this repository.
+ Installing ng2share is really easy. 2 steps : clone the repo & get font-awesome (for the icons).
+ [This](http://stackoverflow.com/questions/38796541/how-to-add-font-awesome-to-angular-2-cli-project) might help you if you have trouble installing font awesome.
 
 ```
  cd myproject/src
  git clone https://github.com/cedvdb/ng2share.git
 ```
 
- Don't want to install it in the src folder ? See [Installing in another folder](#installing-in-another-folder)
 
  Then import it in your module.
 
 ```
  @NgModule({
-   imports: [...,ShareModule],
+   imports: [..., ShareModule ],
  })
 ```
 
@@ -95,7 +93,7 @@ There is quite a few options however, so we are gonna see that next
 **platforms**: Array of string of platform's name that are displayed in the primary panel. Can be anything in : ['reddit','twitter','facebook','googlePlus','stumbleUpon','tumblr','linkedin','pinterest','mail']
 Default is ['twitter', 'facebook'].
 
-**secondaryPlaforms**: Array of string of platform's name that are displayed in the secondary panel (the expanding div). Can be anything in : ['reddit','twitter','facebook','googlePlus','stumbleUpon','tumblr','linkedin','pinterest','mail']
+**secondaryPlatforms**: Array of string of platform's name that are displayed in the secondary panel (the expanding div). Can be anything in : ['reddit','twitter','facebook','googlePlus','stumbleUpon','tumblr','linkedin','pinterest','mail']
 Default is ['googlePlus','reddit','pinterest', 'linkedin']
 
 **expandable**: true (default) / false; Specify if the component is expandable (whether the secondary panel is present or not).
@@ -157,27 +155,6 @@ The code in the source code is actually :
 
  Note that url properties doesn't appear here. It will still use the meta tag (or if not specified the current url). It wouldn't make sens to have an url prop here.
  None of the properties are mendatory but it is advised to be quite exhaustive. Via and hashtags are limited to twitter.
-
-
-
-## Installing in another folder
-
- Ok, so you don't want the *ng2share* folder to be in the *src* folder ? Well it's simple really, first clone the repository in whatever folder you intend to have it as we did in [Installation](#installation)
- . Then you need to go into *share-button.component.css* and change the folder (line ~75) to accurately describe what folder *ng2share* is in.
- In other words, the path for the font is relative to the src folder, as soon as the ng2share folder is moved somewhere else the path for the fonts must be changed accordingly.
-
- For example if you put your ng2share folder in src/app/components : the css must become :
-
- ```
- @font-face {
-  font-family: 'n2s-icomoon';
-  src:  url('src/app/components/ng2share/fonts/icomoon.eot?ggipqk');
-  src:  url('src/app/components/ng2share/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
-    url('src/app/components/ng2share/fonts/icomoon.ttf?ggipqk') format('truetype'),
-    url('src/app/components/ng2share/fonts/icomoon.woff?ggipqk') format('woff'),
-    url('src/app/components/ng2share/fonts/icomoon.svg?ggipqk#icomoon') format('svg');
-}
-```
 
 ## Thanks for your feedback
 

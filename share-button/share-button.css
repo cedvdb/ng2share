@@ -1,6 +1,9 @@
 a{
   text-decoration:none;
 }
+.ic{
+  font-size: 1.2rem;
+}
 .n2s-share-btn{
   height: 32px;
   width: 32px;
@@ -75,92 +78,11 @@ a{
 
 @font-face {
   font-family: 'n2s-icomoon';
-  src:  url('ng2share/fonts/icomoon.eot?ggipqk');
-  src:  url('ng2share/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
-    url('ng2share/fonts/icomoon.ttf?ggipqk') format('truetype'),
-    url('ng2share/fonts/icomoon.woff?ggipqk') format('woff'),
-    url('ng2share/fonts/icomoon.svg?ggipqk#icomoon') format('svg');
+  src:  url('assets/fonts/icomoon.eot?ggipqk');
+  src:  url('assets/fonts/icomoon.eot?ggipqk#iefix') format('embedded-opentype'),
+    url('assets/fonts/icomoon.ttf?ggipqk') format('truetype'),
+    url('assets/fonts/icomoon.woff?ggipqk') format('woff'),
+    url('assets/fonts/icomoon.svg?ggipqk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
-}
-
-[class^="n2s-icon-"], [class*=" n2s-icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'n2s-icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 1rem;
-}
-
-.n2s-icon-mail:before {
-  content: "\e900";
-}
-.n2s-icon-github-official:before {
-  content: "\e904";
-}
-.n2s-icon-google-plus:before {
-  content: "\e906";
-}
-.n2s-icon-instagram:before {
-  content: "\e912";
-}
-.n2s-icon-pinterest-official:before {
-  content: "\e909";
-}
-.n2s-icon-pinterest-lean:before {
-  content: "\e90a";
-}
-.n2s-icon-share:before {
-  content: "\ea82";
-}
-.n2s-icon-google-plus2:before {
-  content: "\ea8b";
-}
-.n2s-icon-facebook:before {
-  content: "\ea90";
-}
-.n2s-icon-facebook-official:before {
-  content: "\ea91";
-}
-.n2s-icon-twitter:before {
-  content: "\ea96";
-}
-.n2s-icon-blogger:before {
-  content: "\eab7";
-}
-.n2s-icon-blogger2:before {
-  content: "\eab8";
-}
-.n2s-icon-tumblr:before {
-  content: "\eab9";
-}
-.n2s-icon-tumblr2:before {
-  content: "\eaba";
-}
-.n2s-icon-reddit:before {
-  content: "\eac6";
-}
-.n2s-icon-linkedin:before {
-  content: "\eac9";
-}
-.n2s-icon-linkedin2:before {
-  content: "\eaca";
-}
-.n2s-icon-lastfm:before {
-  content: "\eacb";
-}
-.n2s-icon-lastfm2:before {
-  content: "\eacc";
-}
-.n2s-icon-stumbleupon:before {
-  content: "\eace";
-}
-.n2s-icon-stumbleupon2:before {
-  content: "\eacf";
 }
