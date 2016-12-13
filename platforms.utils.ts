@@ -6,7 +6,7 @@ export interface Platform{
   text:string;
   properties?:any;
 }
-interface Platforms { // plural
+export interface Platforms { // plural
   twitter:Platform;
   facebook:Platform;
   googlePlus:Platform;
