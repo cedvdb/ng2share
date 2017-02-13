@@ -31,24 +31,46 @@ Also visually inspired from the share buttons at http://mashable.com
 
 ## Installation
 
- Installing ng2share is really easy. 2 steps : clone the repo & get font-awesome (for the icons).
- [This](http://stackoverflow.com/questions/38796541/how-to-add-font-awesome-to-angular-2-cli-project) might help you if you have trouble installing font awesome.
+This widget requires font awesome so 
 
 ```
- cd myproject/src
- git clone https://github.com/cedvdb/ng2share.git
+      npm install ng2share --save
+```
+
+Add the icons to your angular-cli.json :
+
+```
+      "styles": [
+        "styles.css",
+        "../node_modules/font-awesome/css/font-awesome.css" 
+      ],
 ```
 
 
  Then import it in your module.
 
 ```
+import {ShareModule} from 'ng2share/share.module'
+
  @NgModule({
    imports: [..., ShareModule ],
  })
 ```
 
 ## Usage
+
+You then can use the share container in your app
+
+```
+    <share-container
+                        direction="horizontal"
+                        addedText="your creation"
+                        [expandable]="true"
+                        [textEnabled]="true"
+                        [platforms]="['reddit','twitter','facebook','mail']">
+    </share-container>
+
+```
 
  By default, ng2share takes the url and the title of your website to pass it in the parameters of the share url.
 

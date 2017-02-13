@@ -1,0 +1,30 @@
+{
+  "name": "ng2share",
+  "version": "1.3.0",
+  "description": "angular 2 social media sharing buttons",
+  "main": "share.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedvdb/ng2share.git"
+  },
+  "keywords": [
+    "angular",
+    "2",
+    "social",
+    "buttons",
+    "sharing",
+    "media"
+  ],
+  "author": "cedvdb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedvdb/ng2share/issues"
+  },
+  "homepage": "https://github.com/cedvdb/ng2share#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
