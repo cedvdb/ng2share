@@ -1,5 +1,4 @@
 # ng2share Expandable Share buttons for angular 2 !
-### version : 1.2.1
 
 ![ng2share preview](http://i.imgur.com/L9EbBaa.png)
 
