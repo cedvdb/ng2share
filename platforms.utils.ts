@@ -99,7 +99,7 @@ export const platforms:Platforms = {
         },
   mail : {
               name:'mail',
-              url: 'mailto:?subject=I%20saw%20this%20and%20thought%20about%20you:%20',
+              url: 'mailto:?subject=',
               logoOfficial:'envelope',
               logo:'mail',
               text:'Mail',
